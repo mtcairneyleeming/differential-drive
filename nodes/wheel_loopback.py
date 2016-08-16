@@ -49,7 +49,7 @@ class WheelLoopback():
         
         rospy.Subscriber('motor', Int16, self.motor_callback)
         
-        self.pub_wheel = rospy.Publisher('wheel', Int16)
+        self.pub_wheel = rospy.Publisher('wheel', Int16, queue_size=1)
         
     ###############################################
     def spin(self):

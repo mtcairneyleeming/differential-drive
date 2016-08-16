@@ -44,8 +44,8 @@ if __name__ == '__main__':
     rospy.Subscriber("lwheel", Int16, lwheelCallback)
     rospy.Subscriber("rwheel", Int16, rwheelCallback)
     
-    lscaled_pub = rospy.Publisher("lwheel_scaled", Int16)
-    rscaled_pub = rospy.Publisher("rwheel_scaled", Int16) 
+    lscaled_pub = rospy.Publisher("lwheel_scaled", Int16, queue_size=1)
+    rscaled_pub = rospy.Publisher("rwheel_scaled", Int16, queue_size=1) 
     
     ### testing sleep CPU usage
     r = rospy.Rate(50) 
