@@ -1,5 +1,6 @@
 # differential-drive
 
-see http://wiki.ros.org/differential_drive for details. This is a catkinized version of the original code found at the link below
+See http://wiki.ros.org/differential_drive for details on useage. 
+This is a version of the project at the link below, slightly modified to use the new catkin build system in ROS
 
-(Automatically exported from code.google.com/p/differential-drive)
+Original source:  code.google.com/p/differential-drive (still exists, but is now read-only)
